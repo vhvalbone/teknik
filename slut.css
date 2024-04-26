@@ -1,45 +1,54 @@
 .Startsida{
+
     background-color: #ffffff;
 }
 
 body{
+
     background-color: #000000;
 }
 
 .START{
+
     color:black;
 }
 
 header{
+
     background-color:#333;
 }
 
 .header-container {
+
     background-color: #ff0101; 
     margin-top: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
+
     list-style-type: none;
-    padding: 15;
-    margin: 15;
-    columns: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    margin: 15px;
+    columns: 4px;
     column-gap: 100px;
     display: flex; 
     justify-content: center;
 }
 
 nav li {
+
     display: inline-block;
     margin-right: 30px; 
 }
 
 .start{
+
     color:black;
 }
 
 nav a {
+
     display: block;
     text-decoration: none;
     color:white; 
@@ -49,54 +58,64 @@ nav a {
 
 
 nav a:hover {
+
     background-color:#a50000; 
 }
 
 h2{
+
     display:flex;
     justify-content: center;
     color:#a50000;
 }
 
 p{
+
     color:#a50000
 }
 
 .main-container {
+
     display: flex; 
 }
 
 .left-column,
 .right-column {
+
     flex: 1; 
     padding: 20px;
 }
 
 .Left-Column{
+
     background-color: #ccc;
     flex: 1; 
     padding: 20px;
 }
 
 .Right-Column{
+
     background-color: #ccc;
     flex: 1; 
     padding: 20px;
 }
 
 .left-column {
+
     background-color: #000000;
     flex: 1; 
     padding: 20px;
 }
 
 .right-column {
+
     background-color: #000000;
     flex: 1; 
     padding: 20px;
 }
 
 a {
+
     display: block;
     text-decoration: none;
     color: #000000; 
@@ -105,61 +124,68 @@ a {
 }
 
 iframe{
-    width: 560px;
-    height: 315px;
+
+    width: 100%;
+    height: 35%;
+    border:none;
 }
 
 video{
-    width: 560px;
-    height: 315px;
+
+    width: 30em;
+    height: 20em;
 }
 
 .mc{
+
     width: 250px;
     height: 200px;
 }
 
 .for{
+
     width: 250px;
     height: 200px;
     background-color: white;
 }
 
-.raft{
-    width: 250px;
-    height: 200px;
-}
-
 .pubg{
-    width: 250px;
-    height: 200px;
+
+    width: 25fr;
+    height: 20fr;
 }
 
 table {
+
     width: 50%;
     margin: 20px auto;
     border-collapse: collapse;
 }
 
 th, td {
+
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
 th {
+
     background-color: #f2f2f2;
 }
 
 tr:nth-child(even) {
+
     background-color: #f2f2f2;
 }
 
 tr:hover {
+
     background-color: #f9f9f9;
 }
 
 footer {
+
     background-color: #333;
     color: white;
     text-align: center;
@@ -168,6 +194,7 @@ footer {
 }
 
 .footer-links {
+
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -177,45 +204,55 @@ footer {
 }
 
 .footer-links li {
+
     margin: 0 10px;
 }
 
 .footer-links li a {
+
     color: #fff;
     text-decoration: none;
 }
 
 .footer-links li p {
+
     margin: 0;
     color: #ccc;
 }
 
 
 .raft {
+
 width: 20px;
 }
 
 form, label{
+
     color: white;
 }
 
 form, input{
+
     color: rgb(0, 0, 0);
     
 }
 
 form, select{
+
     color: rgb(0, 0, 0);
 }
 option{
+
     color:#000000
 }
 
 .Tack{
+
     color: aqua;
 }
 
 .tack{
+
     color: aqua;
     list-style-type: none;
     display: flex;
@@ -224,5 +261,6 @@ option{
 }
 
 .tacK{
+
     background-color: #333;
 }
