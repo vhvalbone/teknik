@@ -1,11 +1,18 @@
+.Startsida{
+    background-color: #ffffff;
+}
+
+body{
+    background-color: #000000;
+}
+
 header{
-    background-color: aqua;
+    background-color:#333;
 }
 
 .header-container {
     background-color: #ff0101; 
-    padding: 30px; 
-    margin: 30px;
+    margin-top: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,21 +35,26 @@ nav li {
 nav a {
     display: block;
     text-decoration: none;
-    color: #333; 
+    color:white; 
     padding: 5px 10px; 
 
 }
 
 
 nav a:hover {
-    background-color: #a50000; 
+    background-color:#a50000; 
 }
 
 h2{
     display:flex;
     justify-content: center;
-    color: green;
+    color:#a50000;
 }
+
+p{
+    color:#a50000
+}
+
 .main-container {
     display: flex; 
 }
@@ -53,12 +65,20 @@ h2{
     padding: 20px;
 }
 
+.Left-Column{
+    background-color: #ccc;
+}
+
+.Right-Column{
+    background-color: #ccc;
+}
+
 .left-column {
-    background-color: #f9f9f9;
+    background-color: #000000;
 }
 
 .right-column {
-    background-color: #eaeaea;
+    background-color: #000000;
 }
 
 a {
@@ -87,6 +107,7 @@ video{
 .for{
     width: 250px;
     height: 200px;
+    background-color: white;
 }
 
 .raft{
@@ -99,7 +120,6 @@ video{
     height: 200px;
 }
 
-/* Enkel stil för tabellen */
 table {
     width: 50%;
     margin: 20px auto;
@@ -126,8 +146,10 @@ tr:hover {
 
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
 }
 
 .footer-links {
@@ -156,4 +178,36 @@ footer {
 
 .raft {
 width: 20px;
+}
+
+form, label{
+    color: white;
+}
+
+form, input{
+    color: rgb(0, 0, 0);
+    
+}
+
+form, select{
+    color: rgb(0, 0, 0);
+}
+option{
+    color:#000000
+}
+
+.Tack{
+    color: aqua;
+}
+
+.tack{
+    color: aqua;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tacK{
+    background-color: #333;
 }
