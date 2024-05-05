@@ -1,142 +1,183 @@
-.Startsida{
+.Startsida{ /*ändra utseendet på elementet med classen Starsida*/
 
-    background-color: #ccc;
+    background-color: #ccc; /*ändra bakgrunds färgen på sidan med klasen Startsida*/
 }
 
-body{
+body{ /*gör så man kan ändra utseendet på elementet body*/
 
-    background-color: #00ff6a;
+    background-color: #00ff6a; /*ändra bakgrunds färgen på bodyn*/
 }
 
-.START{
+.START{ /* ändra utseendet och egenskaper för elementet med klassen START*/
 
-    color:black;
+    color:black; /*ändra utseendet på text färgen*/
 }
 
-header{
+header{ /*ändra utseendet och egenskaperna på elementet <header>*/
 
-    background-color:#333;
+    background-color:#333; /*ändra bakgrunds färgen på headern*/
 }
 
-.header-container {
+.header-container { /*ändra utseendet och egenskaperna på elementet som har classen .header-container*/
 
-    background-color: #ff0101; 
-    margin-top: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-
-    list-style-type: none;
-    padding: 15px;
-    margin: 15px;
-    columns: 4px;
-    column-gap: 100px;
-    display: flex; 
-    justify-content: center;
-}
-
-nav li {
-
-    display: inline-block;
-    margin-right: 30px; 
-}
-
-.start{
-
-    color:black;
-}
-
-nav a {
-
-    display: block;
-    text-decoration: none;
-    color:white; 
-    padding: 5px 10px; 
+    background-color: #ff0101; /*ändra bakgrunds färgen*/
+    margin-top: 30px; /* används för att styra det tomma utrymmet (marginalen) överför ett element. I det här fallet, kommer det att skapa en tom yta på 30 pixlar ovanför det aktuella elementet.*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Skapar en subtil skugga under elementet med en liten vertikal förskjutning och spridningseffekt, vilket ger en känsla av lyft från bakgrunden */
 
 }
 
+nav ul { /*Tillämpar stilar på ul-element som är en del av nav-elementet */
 
-nav a:hover {
 
-    background-color:#a50000; 
+    list-style-type: none; /* Tar bort punktliststilen från ul-element som är en del av nav-elementet */
+
+    padding: 15px;/* Tillämpar 15 pixlar av utfyllnad runt elementet */
+
+    margin: 15px; /* Tillämpar 15 pixlar av marginal runt elementet */
+
+    columns: 4px; /* Delar upp innehållet i kolumner med en bredd på 4 pixlar */
+
+    column-gap: 100px; /* Sätter ett mellanrum på 100 pixlar mellan kolumnerna */
+
+    display: flex; /* Använder flexbox-modellen för layout av element */
+
+    justify-content: center; /* Centrerar flex-element horisontellt */
+
 }
 
-h2{
+nav li { /* Tillämpar stilar på li-element som är en del av nav-elementet */
 
-    display:flex;
-    justify-content: center;
-    color:#000000;
+    display: inline-block; /* Gör li-elementet till en inline-block, vilket tillåter andra element att ligga bredvid det och behåller dess blockegenskaper */
+
+    margin-right: 30px; /* Sätter ett marginalavstånd på 30 pixlar till höger om li-elementet */
+
 }
 
-p{
+.start{ /* ändra utseendet och egenskaperna för elementet med classen start*/
 
-    color:#000000
+    color:black; /*ändra text färgen till svart*/
 }
 
-.main-container {
+nav a { /* Tillämpar stilar på a-element som är en del av nav-elementet*/
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad */
+
+    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkar */
+
+    color:white; /*ändra text färgen för länkarna till vitt*/
+
+    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad över och under samt 10 pixlar till vänster och höger om elementet */
+
+}
+
+
+nav a:hover { /* Tillämpar stilar på länkar när muspekaren svävar över dem, inom nav-elementet */
+
+    background-color:#a50000; /*ändra bakgrunds färgen när muspekaren är över länkarna inom nav-elementet*/
+}
+
+h2{ /* Tillämpar stilar på alla h2-element */
+
+    display:flex; /* Använder flexbox-modellen för layout av element inom h2-elementet */
+
+    justify-content: center; /* Centrerar flex-element horisontellt inom h2-elementet */
+
+    color:#000000; /*ändra färgen på h2-elementet*/
+}
+
+p{ /*ändra egenskaper och utseenden på alla p-element*/
+
+    color:#000000 /* Tillämpar svart textfärg på alla p-element */
+
+}
+
+.main-container {/* Tillämpar stilar på element med classen "main-container" */
+
+    display: grid; /* Använder grid-layoutmodellen för layout av element med klassen "main-container" */
+
+    grid-template-columns: 1fr 1fr; /* Delar upp huvudinnehållet i två kolumner med lika stor bredd */
+
+    grid-gap: 20px; /* Sätter ett mellanrum på 20 pixlar mellan grid-elementen */
+
+    padding: 20px; /* Tillämpar 20 pixlar av utfyllnad runt elementet */
+
 }
 
 .left-column,
-.right-column {
+.right-column { /* Tillämpar stilar på element med classerna "left-column" och "right-column" */
 
-    background-color: #00ff6a;
-    padding: 20px;
+    background-color: #00ff6a; /*ändra bakgrund färgen på elementen med classerna left-column och right-column*/
+    
+    padding: 20px; /* Tillämpar 20 pixlar av utfyllnad runt elementet */
 }
 
 .left-column iframe,
-.right-column iframe{
+.right-column iframe{ /* Tillämpar stilar på iframe-element inuti element med classerna "left-column" och "right-column" */
 
-    width: 100%;
-    height: 300px;
-    border:none;
+    width: 100%; /* Sätter bredden på iframe-elementet till 100% av dess förälders bredd */
+
+    height: 300px; /* Sätter höjden på iframe-elementet till 300 pixlar */
+
+    border:none; /* Tar bort alla kanter från elementet */
+
 } 
 
 .Left-Column,
-.Right-Column{
+.Right-Column{ /* Tillämpar stilar på element med classerna "Left-Column" och "Right-Column" */
 
-    background-color: #ccc;
-    padding: 20px;
+    background-color: #ccc; /* Sätter bakgrundsfärgen till grå för element med klasserna "Left-Column" och "Right-Column" */
+
+    padding: 20px;/* Tillämpar 20 pixlar av utfyllnad runt elementen med classerna "Left-Column" och "Right-Column" */
+
 
 }
 
 .Left-Column iframe,
-.Right-Column iframe{
+.Right-Column iframe{/* Tillämpar stilar på iframe-element inuti element med classerna "Left-Column" och "Right-Column" */
 
-    width: 100%;
-    height: 300px;
-    border:none;
+    width: 100%; /* Sätter bredden på iframe-elementet till 100% av dess förälders bredd */
+
+    height: 300px; /* Sätter höjden på iframe-elementet till 300 pixlar */
+
+    border:none; /* Tar bort alla kanter från elementet */
+
 }
 
-h4{
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+h4{ /* Tillämpar stilar på alla h4-element */
+
+    color: #000000; /* Tillämpar svart textfärg på alla h4-element */
+
+    font-family: Arial, Helvetica, sans-serif; /* Använder typsnitten Arial, Helvetica eller sans-serif för texten inuti h4-element */
+
 }
 
-a {
+a { /* Tillämpar stilar på alla länkar */
 
-    display: block;
-    text-decoration: none;
-    color: #000000; 
-    padding: 5px 10px; 
-    font-size: 18px;
+    display: block; /* Gör länken till ett blockelement för att kunna tillämpa padding och andra layoutegenskaper */
+
+    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkarna */
+
+    color: #000000; /* Sätter svart textfärg på länkarna */
+
+    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad (padding) över och under samt 10 pixlar till vänster och höger om länken */
+
+    font-size: 18px; /* Sätter fontstorleken till 18 pixlar */
+
 }
 
-video{
+video{ /* Tillämpar stilar på alla video-element */
 
-    width: 30em;
-    height: 20em;
+    width: 30em; /* Sätter bredden på videon till 30em */
+
+    height: 20em; /* Sätter höjden på videon till 20em */
+
 }
 
-.mc{
+.mc{ /* Tillämpar stilar på alla element med klassen "mc" */
 
-    width: 250px;
-    height: 200px;
+    width: 250px; /* Sätter bredden på element med klassen "mc" till 250 pixlar */
+
+    height: 200px; /* Sätter höjden på element med klassen "mc" till 200 pixlar */
 }
 
 .for{
