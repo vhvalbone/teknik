@@ -180,125 +180,167 @@ video{ /* Tillämpar stilar på alla video-element */
     height: 200px; /* Sätter höjden på element med klassen "mc" till 200 pixlar */
 }
 
-.for{
+.for{ /* Tillämpar stilar på alla element med classen "for" */
 
-    width: 250px;
-    height: 200px;
-    background-color: white;
+    width: 250px; /* Sätter bredden på element med klassen "for" till 250 pixlar */
+
+    height: 200px; /* Sätter höjden på element med klassen "for" till 200 pixlar */
+
+    background-color: white; /* Sätter bakgrundsfärgen på element med klassen "for" till vit */
+
 }
 
-.pubg{
+.pubg{ /* Tillämpar stilar på alla element med klassen "pubg" */
 
-    width: 250px;
-    height: 200px;
+    width: 250px; /* Sätter bredden på element med klassen "pubg" till 250 pixlar */
+
+    height: 200px; /* Sätter höjden på element med klassen "pubg" till 200 pixlar */
+
 }
 
-table {
+table { /* Tillämpar stilar på alla tabeller */
 
-    width: 50%;
-    margin: 20px auto;
-    border-collapse: collapse;
+    width: 50%; /* Sätter bredden på tabellen till 50% av dess förälders bredd */
+
+    margin: 20px auto; /* Centrerar tabellen horisontellt genom att sätta ett marginavstånd på 20 pixlar ovanför och under samt auto på sidorna */
+
+    border-collapse: collapse; /* Slår samman gränserna mellan celler */
+
 }
 
-th, td {
+th, td { /* Tillämpar stilar på alla th- och td-element */
 
-    padding: 10px;
-    text-align: left;
-    border-bottom:1px solid #f2f2f2;
+    padding: 10px; /* Tillämpar 10 pixlar av utfyllnad (padding) runt texten inuti cellerna */
+
+    text-align: left; /* Justerar texten till vänster inuti cellerna */
+
+    border-bottom:1px solid #f2f2f2; /* Lägger till en gränslinje längst ner på varje cell med en tjocklek på 1 pixlar och en ljusgrå färg */
+
 }
 
-th {
+th { /*ändra egenskaperna inom elementet th*/
 
-    background-color: #f2f2f2;
+    background-color: #ffffff; /* Tillämpar en vitt bakgrundsfärg på th-element */
+
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /* Tillämpar stilar på jämna rader (tr-element) i tabellen */
 
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-
-    background-color: #f2f2f2;
-}
-
-footer {
-
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: auto;
-}
-
-.footer-links {
-
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-links li {
-
-    margin: 0 10px;
-}
-
-.footer-links li a {
-
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-links li p {
-
-    margin: 0;
-    color: #ccc;
-}
-
-
-.raft {
-
-width: 20px;
-}
-
-form, label{
-
-    color: rgb(0, 0, 0);
-}
-
-form, input{
-
-    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* Tillämpar en vit bakgrundsfärg på jämna rader (tr-element) i tabellen */
     
 }
 
-form, select{
+tr:hover { /* Tillämpar stilar på rader när muspekaren svävar över dem */
 
-    color: rgb(0, 0, 0);
+    background-color: #f2f2f2; /* Tillämpar en ljusgrå bakgrundsfärg på rader när muspekaren svävar över dem */
+
 }
-option{
+
+footer { /* Tillämpar stilar på footern */
+
+    background-color: #333; /* Sätter bakgrundsfärgen till mörkgrå */
+
+    color: white; /* Sätter textfärgen till vit */
+
+    text-align: center; /* Centrerar texten */
+
+    padding: 10px; /* Tillämpar 10 pixlar av utfyllnad (padding) runt texten */
+
+    margin-top: auto; /* Placerar footern längst ned på sidan */
+
+}
+
+.footer-links { /* Tillämpar stilar på länklistan i footern */
+
+    list-style-type: none; /* Tar bort punktliststilen från länklistan */
+
+    display: flex; /* Använder flexbox-modellen för layout av länklistan */
+
+    justify-content: center; /* Centrerar länklistan längs huvudaxeln (horisontellt) */
+
+    align-items: center; /* Centrerar länklistan längs tväraxeln (vertikalt) */
+
+    margin: 0; /* Tar bort eventuellt mellanrum runt länklistan */
+
+    padding: 0; /* Tar bort eventuell padding runt länklistan */
+
+}
+
+.footer-links li { /* Tillämpar stilar på varje listelement (li) inuti länklistan i footern */
+
+    margin: 0 10px; /* Sätter ett marginalavstånd på 0 pixlar till över och under samt 10 pixlar till höger och vänster om varje listelement */
+
+}
+
+.footer-links li a { /* Tillämpar stilar på länkarna inuti varje listelement (li) i länklistan i footern */
+
+    color: #fff; /* Sätter textfärgen till vit för länkarna */
+
+    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkarna */
+
+}
+ 
+.footer-links li p { /* Tillämpar stilar på paragraferna inuti varje listelement (li) i länklistan i footern */
+
+    margin: 0; /* Tar bort eventuellt mellanrum runt paragraferna */
+
+    color: #ccc; /* Sätter textfärgen till ljusgrå för paragraferna */
+
+}
+
+
+.raft { /*tillämpa stilar på classen raft*/
+
+width: 20px; /* Sätter bredden på elementet till 20 pixlar */
+
+}
+
+form, label{ /* Tillämpar stilar på både formulär och etiketter */
+
+    color: rgb(0, 0, 0); /* Sätter textfärgen till svart för både formulär och etiketter */
+
+}
+
+form, input{ /* Tillämpar stilar på både formulär och input-element */
+
+    color: rgb(0, 0, 0); /* Sätter textfärgen till svart för både formulär och input-element */
+
+   
+}
+
+form, select{ /* Tillämpar stilar på både formulär och select-element */
+
+    color: rgb(0, 0, 0); /* Sätter textfärgen till svart för både formulär och select-element */
+
+}
+
+option{ /* Sätter textfärgen till svart för option-element */
 
     color:#000000
 }
 
-.Tack{
+.Tack{ /* ändra egenskaperna för classen "Tack"*/
 
-    color: aqua;
+    color: aqua; /* Sätter textfärgen till aqua för element med classen "Tack" */
+
 }
 
-.tack{
+.tack{ /* Tillämpar stilar på element med classen "tack" */
 
-    color: aqua;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: aqua; /* Sätter textfärgen till aqua för element med classen "tack" */
+
+    list-style-type: none; /* Tar bort punktliststilen från element med classen "tack" */
+
+    display: flex; /* Använder flexbox-modellen för layout av element med classen "tack" */
+
+    align-items: center; /* Centrerar element med classen "tack" längs tväraxeln (vertikalt) */
+
+    justify-content: center; /* Centrerar element med classen "tack" längs huvudaxeln (horisontellt) */
+
 }
 
-.tacK{
+.tacK{ /* Tillämpar stilar på element med classen "tacK" */
 
-    background-color: #333;
+    background-color: #333; /* Sätter bakgrundsfärgen till mörkgrå */
+
 }

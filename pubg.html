@@ -26,10 +26,10 @@
                     Vad är Pubg och Största eventet?
                 </h4>
                 <iframe src="https://www.youtube.com/embed/N7DlCZlPpbU?si=t6MAyCo4HYQ02CUd" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <figure>
+            <figure> <figure> <!--elementet används i HTML för att gruppera samman en eller flera inbäddade objekt, till exempel bilder, videor, etc-->
                 <img src="pubg2.png" alt="pubg" class="pubg">
-                <figcaption>En bild på Pubgs loga</figcaption>
-            </figure>
+                <figcaption>En bild på Pubgs loga</figcaption> <figcaption><!--elementet används för att definiera en bildtext (caption) för innehållet inom ett <figure>-element.-->
+            </figure> <!--stänger figure-elementet-->
                 <p>PlayerUnknown's Battlegrounds, ofta förkortat som PUBG, är ett otroligt populärt onlinespel med flerspelarläge i battle royale-genren, utvecklat och publicerat av PUBG Corporation, en dotterbolag till det sydkoreanska videospelsföretaget Bluehole. Sedan det släpptes i mars 2017 har PUBG blivit en global sensation som har fängslat miljontals spelare med dess intensiva spelupplevelse och strategiska strider.
                     
                 <h4>Spelöversikt</h4>
@@ -86,43 +86,89 @@
             </div>
         </div>
 
-        <form action="tack.html" method="get">
+        <form action="tack.html" method="get"> <!--Denna tagg inleder ett HTML-formulär. Attributet action specificerar vilken fil eller URL som formulärdata ska skickas till när användaren klickar på knappen för att skicka in formuläret.-->
 
-            <label for="innan">Har du någon gång spelat Pubg innan:</label>
-            <input type="text" id="innan" name="innan" required><br>
+            <label for="innan">Har du någon gång spelat Pubg innan:</label> <!--skapar en etikett för ett formulärsfält med id "innan". Etiketten beskriver vanligtvis syftet eller frågan som associeras med det angivna formulärsfältet.-->
+            <input type="text" id="innan" name="innan" required> <!--skapar ett textinmatningsfält i ett formulär. Attributet type anger typen av inmatningsfält, i detta fall "text", vilket innebär att användaren kan skriva in text. och Attributet required anger att fältet måste fyllas i innan formuläret kan skickas.-->
+            
+            <br>
+
             <label for="vadtycks">Vad tyckte du om Pubg då?:</label>
-            <select id="vadtycks" name="vad tycks">
-                <option value="intressant">Intressant</option>
+
+            <select id="vadtycks" name="vad tycks"> <!--Detta skapar en select-element där användaren kan välja ett alternativ från en lista med fördefinierade alternativ-->
+
+                <option value="intressant">Intressant</option> <!--detta skapar de förvalda alternativen för select-elementet-->
+
                 <option value="bra">Bra</option>
+
                 <option value="dålig">Dålig</option>
+
                 <option value="ointressant">Ointressant</option>
+
                 <option value="har inte spelat innan">har inte spelat innan</option>
-            </select><br>
+
+            </select>
+
             <br>
-            <label>Hur mycket vill du spelar Pubg nu?</label><br>
+
+            <label>Hur mycket vill du spelar Pubg nu?</label> <!--Detta skapar en etikett som beskriver en fråga till användaren. I detta fall frågar den hur mycket användaren vill spela Pubg nu.-->
+            
+            <br>
+
             <input type="radio" id="mycket1" name="mycket" value="1">
-            <label for="mycket1">1</label><br>
-            <input type="radio" id="mycket2" name="mycket" value="2">
-            <label for="mycket2">2</label><br>
-            <input type="radio" id="mycket3" name="mycket" value="3">
-            <label for="mycket3">3</label><br>
-            <input type="radio" id="mycket4" name="mycket" value="4">
-            <label for="mycket4">4</label><br>
-            <input type="radio" id="mycket5" name="mycket" value="5">
-            <label for="mycket5">5</label><br>
-            <input type="radio" id="mycket6" name="mycket" value="6">
-            <label for="mycket6">6</label><br>
-            <input type="radio" id="mycket7" name="mycket" value="7">
-            <label for="mycket7">7</label><br>
-            <input type="radio" id="mycket8" name="mycket" value="8">
-            <label for="mycket8">8</label><br>
-            <input type="radio" id="mycket9" name="mycket" value="9">
-            <label for="mycket9">9</label><br>
-            <input type="radio" id="mycket10" name="mycket" value="10">
-            <label for="mycket10">10</label>
+            <label for="mycket1">1</label>
+            
             <br>
-            <input type="submit" value="Skicka">
-        </form>
+
+            <input type="radio" id="mycket2" name="mycket" value="2">
+            <label for="mycket2">2</label>
+            
+            <br>
+
+            <input type="radio" id="mycket3" name="mycket" value="3">
+            <label for="mycket3">3</label>
+            
+            <br>
+
+            <input type="radio" id="mycket4" name="mycket" value="4">
+            <label for="mycket4">4</label>
+            
+            <br>
+
+            <input type="radio" id="mycket5" name="mycket" value="5">
+            <label for="mycket5">5</label>
+            
+            <br>
+
+
+            <input type="radio" id="mycket6" name="mycket" value="6">
+            <label for="mycket6">6</label>
+            
+            <br>
+
+            <input type="radio" id="mycket7" name="mycket" value="7">
+            <label for="mycket7">7</label>
+            
+            <br>
+
+            <input type="radio" id="mycket8" name="mycket" value="8">
+            <label for="mycket8">8</label>
+            
+            <br>
+
+            <input type="radio" id="mycket9" name="mycket" value="9">
+            <label for="mycket9">9</label>
+            
+            <br>
+
+            <input type="radio" id="mycket10" name="mycket" value="10"> <!--Det skapar en radioknapp där användaren kan välja alternativet 10 och associerar den med etiketten "10"-->
+            <label for="mycket10">10</label> <!-- När användaren klickar på texten "10" kommer radioknappen att bli markerad.-->
+
+            <br> <!-- Skapar en radbrytning i HTML-dokumentet -->
+
+            <input type="submit" value="Skicka"> <!-- Submit-knapp för att skicka in formuläret -->
+
+        </form> 
         <footer>
             <ul class="footer-links">
                 <li><p>Albin Svensson</p></li>
