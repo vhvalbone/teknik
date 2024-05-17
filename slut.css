@@ -1,11 +1,6 @@
-.Startsida{ /*ändra utseendet på elementet med classen Starsida*/
-
-    background-color: #ccc; /*ändra bakgrunds färgen på sidan med klasen Startsida*/
-}
-
 body{ /*gör så man kan ändra utseendet på elementet body*/
 
-    background-color: #00ff6a; /*ändra bakgrunds färgen på bodyn*/
+    background-color: #ccc; /*ändra bakgrunds färgen på bodyn*/
 }
 
 .START{ /* ändra utseendet och egenskaper för elementet med klassen START*/
@@ -106,7 +101,7 @@ p{ /*ändra egenskaper och utseenden på alla p-element*/
 .left-column,
 .right-column { /* Tillämpar stilar på element med classerna "left-column" och "right-column" */
 
-    background-color: #00ff6a; /*ändra bakgrund färgen på elementen med classerna left-column och right-column*/
+    background-color: #ccc; /*ändra bakgrund färgen på elementen med classerna left-column och right-column*/
     
     padding: 20px; /* Tillämpar 20 pixlar av utfyllnad runt elementet */
 }
@@ -206,6 +201,8 @@ table { /* Tillämpar stilar på alla tabeller */
 
     border-collapse: collapse; /* Slår samman gränserna mellan celler */
 
+    justify-content: center;
+
 }
 
 th, td { /* Tillämpar stilar på alla th- och td-element */
@@ -214,8 +211,9 @@ th, td { /* Tillämpar stilar på alla th- och td-element */
 
     text-align: left; /* Justerar texten till vänster inuti cellerna */
 
-    border-bottom:1px solid #f2f2f2; /* Lägger till en gränslinje längst ner på varje cell med en tjocklek på 1 pixlar och en ljusgrå färg */
+    border-bottom:1px solid #ffffff; /* Lägger till en gränslinje längst ner på varje cell med en tjocklek på 1 pixlar och en ljusgrå färg */
 
+    justify-content: center;
 }
 
 th { /*ändra egenskaperna inom elementet th*/
@@ -321,13 +319,13 @@ option{ /* Sätter textfärgen till svart för option-element */
 
 .Tack{ /* ändra egenskaperna för classen "Tack"*/
 
-    color: aqua; /* Sätter textfärgen till aqua för element med classen "Tack" */
+    color: rgb(0,0,0); /* Sätter textfärgen till aqua för element med classen "Tack" */
 
 }
 
-.tack{ /* Tillämpar stilar på element med classen "tack" */
+.hoppas{ /* Tillämpar stilar på element med classen "tack" */
 
-    color: aqua; /* Sätter textfärgen till aqua för element med classen "tack" */
+    color: rgb(0, 0, 0); /* Sätter textfärgen till aqua för element med classen "tack" */
 
     list-style-type: none; /* Tar bort punktliststilen från element med classen "tack" */
 
@@ -339,8 +337,6 @@ option{ /* Sätter textfärgen till svart för option-element */
 
 }
 
-.tacK{ /* Tillämpar stilar på element med classen "tacK" */
-
-    background-color: #333; /* Sätter bakgrundsfärgen till mörkgrå */
-
+.tack-container {
+    text-align: center;
 }
