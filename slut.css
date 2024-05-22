@@ -3,14 +3,16 @@ body{ /*gör så man kan ändra utseendet på elementet body*/
     background-color: #ccc; /*ändra bakgrunds färgen på bodyn*/
 }
 
-.START{ /* ändra utseendet och egenskaper för elementet med klassen START*/
-
-    color:black; /*ändra utseendet på text färgen*/
-}
-
 header{ /*ändra utseendet och egenskaperna på elementet <header>*/
 
     background-color:#333; /*ändra bakgrunds färgen på headern*/
+}
+
+h1{
+
+    color:white;
+
+    justify-content: center;
 }
 
 .header-container { /*ändra utseendet och egenskaperna på elementet som har classen .header-container*/
@@ -30,7 +32,7 @@ nav ul { /*Tillämpar stilar på ul-element som är en del av nav-elementet */
 
     margin: 15px; /* Tillämpar 15 pixlar av marginal runt elementet */
 
-    columns: 4px; /* Delar upp innehållet i kolumner med en bredd på 4 pixlar */
+    columns: 4px; /* Delar upp innehållet i kolumner med en bredd på 4 pixlar, egenskapen columns skapa flerspaltiga layouter genom att kombinera column-width och column-count. Det gör det enkelt att dela upp innehåll i flera kolumner */
 
     column-gap: 100px; /* Sätter ett mellanrum på 100 pixlar mellan kolumnerna */
 
@@ -42,20 +44,15 @@ nav ul { /*Tillämpar stilar på ul-element som är en del av nav-elementet */
 
 nav li { /* Tillämpar stilar på li-element som är en del av nav-elementet */
 
-    display: inline-block; /* Gör li-elementet till en inline-block, vilket tillåter andra element att ligga bredvid det och behåller dess blockegenskaper */
+    display: inline-block; /* Gör li-elementet till en inline-block, vilket tillåter andra element att ligga bredvid det och behåller dess blockegenskaper, flexibelt sätt att skapa horisontella listor samtidigt som du behåller fördelarna med blockelement. */
 
     margin-right: 30px; /* Sätter ett marginalavstånd på 30 pixlar till höger om li-elementet */
 
 }
 
-.start{ /* ändra utseendet och egenskaperna för elementet med classen start*/
-
-    color:black; /*ändra text färgen till svart*/
-}
-
 nav a { /* Tillämpar stilar på a-element som är en del av nav-elementet*/
 
-    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad */
+    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad, element ger flera fördelar som gör det enklare att skapa användarvänliga och responsiva layoutstrukturer */
 
     text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkar */
 
@@ -73,7 +70,7 @@ nav a:hover { /* Tillämpar stilar på länkar när muspekaren svävar över dem
 
 h2{ /* Tillämpar stilar på alla h2-element */
 
-    display:flex; /* Använder flexbox-modellen för layout av element inom h2-elementet */
+    display:flex; /* Använder flexbox-modellen för layout av element inom h2-elementet, Flexbox gör det möjligt att skapa mer avancerade och flexibla layoutalternativ med minimal CSS-kod. */
 
     justify-content: center; /* Centrerar flex-element horisontellt inom h2-elementet */
 
@@ -117,27 +114,6 @@ p{ /*ändra egenskaper och utseenden på alla p-element*/
 
 } 
 
-.Left-Column,
-.Right-Column{ /* Tillämpar stilar på element med classerna "Left-Column" och "Right-Column" */
-
-    background-color: #ccc; /* Sätter bakgrundsfärgen till grå för element med klasserna "Left-Column" och "Right-Column" */
-
-    padding: 20px;/* Tillämpar 20 pixlar av utfyllnad runt elementen med classerna "Left-Column" och "Right-Column" */
-
-
-}
-
-.Left-Column iframe,
-.Right-Column iframe{/* Tillämpar stilar på iframe-element inuti element med classerna "Left-Column" och "Right-Column" */
-
-    width: 100%; /* Sätter bredden på iframe-elementet till 100% av dess förälders bredd */
-
-    height: 300px; /* Sätter höjden på iframe-elementet till 300 pixlar */
-
-    border:none; /* Tar bort alla kanter från elementet */
-
-}
-
 h4{ /* Tillämpar stilar på alla h4-element */
 
     color: #000000; /* Tillämpar svart textfärg på alla h4-element */
@@ -168,28 +144,11 @@ video{ /* Tillämpar stilar på alla video-element */
 
 }
 
-.mc{ /* Tillämpar stilar på alla element med klassen "mc" */
-
-    width: 250px; /* Sätter bredden på element med klassen "mc" till 250 pixlar */
-
-    height: 200px; /* Sätter höjden på element med klassen "mc" till 200 pixlar */
-}
-
 .for{ /* Tillämpar stilar på alla element med classen "for" */
 
     width: 250px; /* Sätter bredden på element med klassen "for" till 250 pixlar */
 
     height: 200px; /* Sätter höjden på element med klassen "for" till 200 pixlar */
-
-    background-color: white; /* Sätter bakgrundsfärgen på element med klassen "for" till vit */
-
-}
-
-.pubg{ /* Tillämpar stilar på alla element med klassen "pubg" */
-
-    width: 250px; /* Sätter bredden på element med klassen "pubg" till 250 pixlar */
-
-    height: 200px; /* Sätter höjden på element med klassen "pubg" till 200 pixlar */
 
 }
 
@@ -248,42 +207,40 @@ footer { /* Tillämpar stilar på footern */
 
 }
 
-.footer-links { /* Tillämpar stilar på länklistan i footern */
+footer  ul {
 
-    list-style-type: none; /* Tar bort punktliststilen från länklistan */
+    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad, element ger flera fördelar som gör det enklare att skapa användarvänliga och responsiva layoutstrukturer */
 
-    display: flex; /* Använder flexbox-modellen för layout av länklistan */
+    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkar */
 
-    justify-content: center; /* Centrerar länklistan längs huvudaxeln (horisontellt) */
+    color:white; /*ändra text färgen för länkarna till vitt*/
 
-    align-items: center; /* Centrerar länklistan längs tväraxeln (vertikalt) */
-
-    margin: 0; /* Tar bort eventuellt mellanrum runt länklistan */
-
-    padding: 0; /* Tar bort eventuell padding runt länklistan */
+    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad över och under samt 10 pixlar till vänster och höger om elementet */
 
 }
 
-.footer-links li { /* Tillämpar stilar på varje listelement (li) inuti länklistan i footern */
+footer li{
 
-    margin: 0 10px; /* Sätter ett marginalavstånd på 0 pixlar till över och under samt 10 pixlar till höger och vänster om varje listelement */
+    display: inline-block; /* Gör li-elementet till en inline-block, vilket tillåter andra element att ligga bredvid det och behåller dess blockegenskaper, flexibelt sätt att skapa horisontella listor samtidigt som du behåller fördelarna med blockelement. */
 
-}
-
-.footer-links li a { /* Tillämpar stilar på länkarna inuti varje listelement (li) i länklistan i footern */
-
-    color: #fff; /* Sätter textfärgen till vit för länkarna */
-
-    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkarna */
+    margin-right: 30px; /* Sätter ett marginalavstånd på 30 pixlar till höger om li-elementet */
 
 }
- 
-.footer-links li p { /* Tillämpar stilar på paragraferna inuti varje listelement (li) i länklistan i footern */
 
-    margin: 0; /* Tar bort eventuellt mellanrum runt paragraferna */
+footer a{
 
-    color: #ccc; /* Sätter textfärgen till ljusgrå för paragraferna */
+    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad, element ger flera fördelar som gör det enklare att skapa användarvänliga och responsiva layoutstrukturer */
 
+    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkar */
+
+    color:white; /*ändra text färgen för länkarna till vitt*/
+
+    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad över och under samt 10 pixlar till vänster och höger om elementet */
+
+}
+.namn{
+
+    color:white;
 }
 
 
@@ -315,12 +272,6 @@ form, select{ /* Tillämpar stilar på både formulär och select-element */
 option{ /* Sätter textfärgen till svart för option-element */
 
     color:#000000
-}
-
-.Tack{ /* ändra egenskaperna för classen "Tack"*/
-
-    color: rgb(0,0,0); /* Sätter textfärgen till aqua för element med classen "Tack" */
-
 }
 
 .hoppas{ /* Tillämpar stilar på element med classen "tack" */
