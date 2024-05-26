@@ -15,7 +15,7 @@
                     <li><a href="raft.html">Raft</a></li>
         
                     <h1><a href="index.html">Mina spel</a></h1>
-                            
+
                     <li><a href="minecraft.html">Minecraft</a></li>
                         
                     <li><a href="fortnite.html">Fortnite</a></li>
@@ -27,9 +27,9 @@
         </h2>
         <div class="main-container">
             <div class="left-column">
-                <h4>
+                <h3>
                     Vad är Minecraft.
-                </h4>
+                </h3>
                 <iframe src="https://www.youtube.com/embed/JpUIQDGLkRs?si=_BzdkpGOPL5qDfv2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <img src="mc.png" alt="minecraft" class="for"> <!--<img>-elementet används för att bädda in en bild i en HTML-sida. Attributet src specificerar sökvägen till bildfilen som ska visas. I detta fall är källan "mc.png". Attributet alt anger en alternativ beskrivning av bilden,-->
                 <p>     Minecraft är ett spel som har fångat miljontals spelares fantasi världen över sedan det släpptes 2011. Skapat av Markus "Notch" Persson och utvecklat av Mojang Studios, är det en sandlåda av oändliga möjligheter och kreativitet.</p>
@@ -72,9 +72,9 @@
                 </table>
             </div>
             <div class="right-column">
-                <h4>
+                <h3>
                     Min favorit minecraft spelare
-                </h4>
+                </h3>
                 <iframe src="https://www.youtube.com/embed/WWEPTifRyAE?si=zbApgj1EcllEtuKG" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>Technoblade är en mycket känd Minecraft-spelare och YouTuber som har fått en stor och hängiven följarskara för sin expertis inom spelet, särskilt inom PvP (Player vs. Player) och Hypixel-spel. Hans verkliga namn är Dave, och han är känd för sin karaktäristiska röst och humoristiska kommentarer i sina videor.</p>
 
@@ -100,48 +100,121 @@
             </div>
         </div>
 
-        <form action="tack.html" method="get">
+        <form action="tack.html" method="get"> <!--Denna tagg inleder ett HTML-formulär. Attributet action specificerar vilken fil eller URL som formulärdata ska skickas till när användaren klickar på knappen för att skicka in formuläret.-->
 
-            <label for="innan">Har du någon gång spelat Minecraft innan:</label>
-            <input type="text" id="innan" name="innan" required><br>
-            <label for="vadtycks">Vad tyckte du om Minecraft då?:</label>
-            <select id="vadtycks" name="vad tycks">
-                <option value="intressant">Intressant</option>
+            <label for="innan">Har du någon gång spelat Pubg innan:</label> <!--skapar en etikett för ett formulärsfält med id "innan". Etiketten beskriver vanligtvis syftet eller frågan som associeras med det angivna formulärsfältet.-->
+            <input type="text" id="innan" name="innan" required> <!--skapar ett textinmatningsfält i ett formulär. Attributet type anger typen av inmatningsfält, i detta fall "text", vilket innebär att användaren kan skriva in text. och Attributet required anger att fältet måste fyllas i innan formuläret kan skickas.-->
+            
+            <br>
+
+            <label for="vadtycks">Vad tyckte du om Pubg då?:</label>
+
+            <select id="vadtycks" name="vad tycks"> <!--Detta skapar en select-element där användaren kan välja ett alternativ från en lista med fördefinierade alternativ-->
+
+                <option value="intressant">Intressant</option> <!--detta skapar de förvalda alternativen för select-elementet-->
+
                 <option value="bra">Bra</option>
+
                 <option value="dålig">Dålig</option>
+
                 <option value="ointressant">Ointressant</option>
+
                 <option value="har inte spelat innan">har inte spelat innan</option>
-            </select><br>
+
+            </select>
+
             <br>
-            <label>Hur mycket vill du spelar Minecraft nu?</label><br>
+
+            <label>Hur mycket vill du spelar Pubg nu?</label> <!--Detta skapar en etikett som beskriver en fråga till användaren. I detta fall frågar den hur mycket användaren vill spela Pubg nu.-->
+            
+            <br>
+
             <input type="radio" id="mycket1" name="mycket" value="1">
-            <label for="mycket1">1</label><br>
-            <input type="radio" id="mycket2" name="mycket" value="2">
-            <label for="mycket2">2</label><br>
-            <input type="radio" id="mycket3" name="mycket" value="3">
-            <label for="mycket3">3</label><br>
-            <input type="radio" id="mycket4" name="mycket" value="4">
-            <label for="mycket4">4</label><br>
-            <input type="radio" id="mycket5" name="mycket" value="5">
-            <label for="mycket5">5</label><br>
-            <input type="radio" id="mycket6" name="mycket" value="6">
-            <label for="mycket6">6</label><br>
-            <input type="radio" id="mycket7" name="mycket" value="7">
-            <label for="mycket7">7</label><br>
-            <input type="radio" id="mycket8" name="mycket" value="8">
-            <label for="mycket8">8</label><br>
-            <input type="radio" id="mycket9" name="mycket" value="9">
-            <label for="mycket9">9</label><br>
-            <input type="radio" id="mycket10" name="mycket" value="10">
-            <label for="mycket10">10</label>
+            <label for="mycket1">1</label>
+            
             <br>
-            <input type="submit" value="Skicka">
-        </form>
+
+            <input type="radio" id="mycket2" name="mycket" value="2">
+            <label for="mycket2">2</label>
+            
+            <br>
+
+            <input type="radio" id="mycket3" name="mycket" value="3">
+            <label for="mycket3">3</label>
+            
+            <br>
+
+            <input type="radio" id="mycket4" name="mycket" value="4">
+            <label for="mycket4">4</label>
+            
+            <br>
+
+            <input type="radio" id="mycket5" name="mycket" value="5">
+            <label for="mycket5">5</label>
+            
+            <br>
+
+
+            <input type="radio" id="mycket6" name="mycket" value="6">
+            <label for="mycket6">6</label>
+            
+            <br>
+
+            <input type="radio" id="mycket7" name="mycket" value="7">
+            <label for="mycket7">7</label>
+            
+            <br>
+
+            <input type="radio" id="mycket8" name="mycket" value="8">
+            <label for="mycket8">8</label>
+            
+            <br>
+
+            <input type="radio" id="mycket9" name="mycket" value="9">
+            <label for="mycket9">9</label>
+            
+            <br>
+
+            <input type="radio" id="mycket10" name="mycket" value="10"> <!--Det skapar en radioknapp där användaren kan välja alternativet 10 och associerar den med etiketten "10"-->
+            <label for="mycket10">10</label> <!-- När användaren klickar på texten "10" kommer radioknappen att bli markerad.-->
+
+            <br> <!-- Skapar en radbrytning i HTML-dokumentet -->
+
+            
+            <div>
+                <label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    tyckte du informationen va bra
+                </label>
+            </div>
+
+            <div>
+                <label for="comments">Kommentarer:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+
+            <div>
+                <label for="username">Användarnamn:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div>
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <input type="submit" value="Skicka"> <!-- Submit-knapp för att skicka in formuläret -->
+
+        </form> 
+
         <footer>
-            <ul>
-                    <li><p class="namn">Albin Svensson</p></li>
-                    <li><a href="index.html">Startsida</a></li>
-            </ul>
-        </footer>
+
+            <p class="footer">Albin Svensson</p>
+
+            <a class="footer" href="index.html">Startsida</a>
+
+    </footer>
+
     </body>
+
 </html>

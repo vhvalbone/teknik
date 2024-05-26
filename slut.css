@@ -114,6 +114,14 @@ p{ /*ändra egenskaper och utseenden på alla p-element*/
 
 } 
 
+h3{ /* Tillämpar stilar på alla h3-element */
+
+    color: #000000; /* Tillämpar svart textfärg på alla h4-element */
+
+    font-family: Arial, Helvetica, sans-serif; /* Använder typsnitten Arial, Helvetica eller sans-serif för texten inuti h4-element */
+
+}
+
 h4{ /* Tillämpar stilar på alla h4-element */
 
     color: #000000; /* Tillämpar svart textfärg på alla h4-element */
@@ -130,11 +138,17 @@ a { /* Tillämpar stilar på alla länkar */
 
     color: #000000; /* Sätter svart textfärg på länkarna */
 
-    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad (padding) över och under samt 10 pixlar till vänster och höger om länken */
-
     font-size: 18px; /* Sätter fontstorleken till 18 pixlar */
+    
+    display: inline-block; /* Gör att padding och border-radius fungerar korrekt */
 
-}
+    padding: 10px 20px; /* Lägg till utrymme inuti länken */
+
+    border-radius: 15px; /* Skapar runda hörn */
+
+    transition: background-color 0.3s; /* Lägger till en övergångseffekt */
+
+    }
 
 video{ /* Tillämpar stilar på alla video-element */
 
@@ -201,43 +215,32 @@ footer { /* Tillämpar stilar på footern */
 
     text-align: center; /* Centrerar texten */
 
-    padding: 10px; /* Tillämpar 10 pixlar av utfyllnad (padding) runt texten */
+    padding: 20px; /* Tillämpar 20 pixlar av utfyllnad (padding) runt texten */
 
     margin-top: auto; /* Placerar footern längst ned på sidan */
 
+    border-top: 1px solid #e7e7e7; /* Lägger till en tunn överkant */
 }
 
-footer  ul {
+.footer {
 
-    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad, element ger flera fördelar som gör det enklare att skapa användarvänliga och responsiva layoutstrukturer */
+    display: flex; /* Använder flexbox för layout */
 
-    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkar */
+    justify-content: center; /* Centrerar innehållet horisontellt */
 
-    color:white; /*ändra text färgen för länkarna till vitt*/
-
-    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad över och under samt 10 pixlar till vänster och höger om elementet */
-
-}
-
-footer li{
-
-    display: inline-block; /* Gör li-elementet till en inline-block, vilket tillåter andra element att ligga bredvid det och behåller dess blockegenskaper, flexibelt sätt att skapa horisontella listor samtidigt som du behåller fördelarna med blockelement. */
-
-    margin-right: 30px; /* Sätter ett marginalavstånd på 30 pixlar till höger om li-elementet */
+    align-items: center; /* Centrerar innehållet vertikalt */
 
 }
 
-footer a{
+.footer a,
+.footer p {
 
-    display: block; /* Gör elementet till ett blockelement, vilket innebär att det kommer att ta upp hela tillgängliga bredden och börja på en ny rad, element ger flera fördelar som gör det enklare att skapa användarvänliga och responsiva layoutstrukturer */
+    text-decoration: none; /* Tar bort understrykning från länkar */
 
-    text-decoration: none; /* Tar bort understrykning eller annan textdekoration från länkar */
-
-    color:white; /*ändra text färgen för länkarna till vitt*/
-
-    padding: 5px 10px; /* Tillämpar 5 pixlar av utfyllnad över och under samt 10 pixlar till vänster och höger om elementet */
+    margin: 0 10px; /* Lägger till horisontellt mellanrum mellan elementen */
 
 }
+
 .namn{
 
     color:white;
@@ -271,7 +274,7 @@ form, select{ /* Tillämpar stilar på både formulär och select-element */
 
 option{ /* Sätter textfärgen till svart för option-element */
 
-    color:#000000
+    color: rgb(0, 0, 0); /* Sätter textfärgen till svart för både formulär och select-element */
 }
 
 .hoppas{ /* Tillämpar stilar på element med classen "tack" */
@@ -288,6 +291,32 @@ option{ /* Sätter textfärgen till svart för option-element */
 
 }
 
-.tack-container {
+
+.tack-container { 
     text-align: center;
+}
+
+/* Lo: Länk som inte har besökts */
+a:link {
+    color: blue;
+}
+
+/* Ve: Besökt länk */
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+/* Fo: Länk i fokus */
+a:focus {
+    outline: 2px solid orange;
+}
+
+/* H: Länk som användaren hovrar över */
+a:hover {
+    color: red;
+}
+
+/* Ate: Länk som användaren klickar på */
+a:active {
+    color: green;
 }
